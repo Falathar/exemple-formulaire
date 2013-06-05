@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mon formulaire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <h1>Remplir ce formulaire</h1>
+
+  <!-- formulaire de type "GET", tu voies les valeurs rentrées dans les deux input (i.e 'name' et 'ip') dans la barre d'adresse, une fois le formulaire validé (i.e. submit) -->
+  <form type="GET" action="traitement_formulaire.php">
+    <table border="1">
+      <tr> <!-- tr: une ligne -->
+        <th><!-- entête -->
+          Nom
+        </th>
+         <th><!-- entête -->
+          Valeur
+        </th>
+      </tr>
+      
+      <tr> <!-- tr: une ligne -->
+        <td><!-- un element -->
+          Nom ordinateur
+        </td>
+         <td><!-- un element -->
+          <input type="text" name="name"/>
+        </td>
+      </tr>
+      
+      <tr> <!-- tr: une ligne -->
+        <td><!-- un element -->
+          Adresse ip:
+        </td>
+         <td><!-- un element -->
+          <input type="text" name="ip" />
+        </td>
+      </tr>
+      
+    </table>
+    
+    <!-- Le submit DOIT être dans le form et de type 'submit' pour le valider -->
+    <input type="submit" value="Valider"/>
+    
+  </form>
+  
+  
+  
+</body>
+</html>
